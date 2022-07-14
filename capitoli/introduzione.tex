@@ -1,0 +1,12 @@
+\chapter{Introduzione}
+\label{chap:Introduzione}
+
+Per numerosi anni, i crittografi hanno sperimentato tecniche di (de)cifratura per creare metodi efficaci e robusti per mettere in sicurezza la comunicazione tra più entità legittime. Uno di questi è la crittografia tradizionale (o classica), che consiste nella condivisione di un messaggio tra due enti attraverso un canale insicuro per natura (ad esempio Internet).
+
+Il messaggio condiviso (\textit{plaintext}) deve essere spedito da un mittente a un destinatario senza l'intervento di terze parti malintenzionate. Per prevenire potenziali impersonificazioni o azioni di \textit{eavesdropping}, il mittente cifra un testo in chiaro X, che diviene un \textit{chipertext} C. Dall'altro lato, il destinatario riceverà il testo cifrato C per rivelare il messaggio X d'origine.
+
+I meccanismi di crittografia classici basano la propria sicurezza sull'assunzione non dimostrata che l'attaccante debba impiegare tempi insostenibilmente lunghi per far breccia nella comunicazione (o sistema) crittografata. Tale assunzione è stata però smentita a seguito della nascita dell'algoritmo di Shor \cite{algo_shor} che dimostra la possibilità di scardinare la sicurezza imposta dalla crittografia classica in tempi polinomiali se si disponi di computer quantistici sufficientemente potenti. Per questi motivi, i ricercatori hanno sviluppato da tempo nuovi protocolli crittografici basati sulle leggi della fisica (quantistica): la crittografia quantistica, infatti, applica le teorie della fisica quantistica per produrre una chiave segreta, che può essere condivisa dalle parti comunicanti. Per raggiungere tale scopo sono nati i protocolli di Quantum Key Distribution (QKD).
+
+Il documento corrente ha come obiettivo il confronto esplicito e critico dei principali protocolli di QKD sulla base di alcune dimensioni di comparazione descritte nel capitolo \ref{chap:metodologie}.
+
+Dapprima si presenteranno i teoremi e i principi su cui i protocolli di QKD basano il proprio funzionamento, quali il principio di indeterminazione, il teorema "no cloning" e l'Entanglement; a questi, si affiancheranno le descrizioni di vulnerabilità di cui i protocolli soffrono e alcuni attacchi che le sfruttano. Quindi, verranno descritte le dimensioni di comparazione sopracitate seguite dai funzionamenti dei protocolli di QKD BB84, E91, B92 e SARG04. Infine, tali protocolli saranno comparati esplicitamente tra loro, sulla base delle dimensioni individuate e di altre considerazioni tecnico-pratiche.

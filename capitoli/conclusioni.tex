@@ -1,0 +1,20 @@
+\chapter{Conclusioni}
+\label{chap:conclusioni}
+In questo documento sono state descritte basi teoretiche e principi fondamentali della meccanica quantistica quali il principio di indeterminazione di Heisenberg, il teorema no-cloning e il principio di Entanglement. Sono poi stati descritti il funzionamento generico dei protocolli di QKD nonché vulnerabilità e attacchi perpetuabili da parte di attaccanti in possesso di tecnologie (quantistiche e non) arbitrarie. Essi sono il \textit{Denial of Service}, il \textit{Photon Number Splitting}, \textit{Intercept-Resend}, \textit{Beam Splitting} e \textit{Physical side-channels}. 
+
+In secondo luogo, sono stati descritti attentamente, ma in modo semplice e conciso, i funzionamenti di protocolli di QKD quali: BB84, E91, B92 e SARG04. Questi sono stati presentati in ordine di pubblicazione, perché rappresentano le basi di numerosi altri protocolli di QKD più recenti non menzionati all'interno del documento.
+
+Contestualmente, è stato costruito per mezzo di tabelle un confronto esplicito dei protocolli descritti. E91 risulta essere l'unico protocollo basato sul principio di Entanglement, contrariamente agli altri che si fondano sul principio di indeterminazione. La polarizzazione dei fotoni, usati ovunque tranne che in SARG04, avviene sempre per mezzo di basi ortogonali ($\bigoplus$ o $\bigotimes$) tranne nel caso di B92. In quest'ultimo, infatti, la polarizzazione avviene per mezzo di basi non ortogonali e porta ad ottenere, peculiarmente, solamente due stati per la codifica binaria contro i soliti quattro previsti dagli altri protocolli. Inoltre, per tutti i protocolli studiati si è osservato che esistono implementazioni sia in ambiente simulato, sia nella realtà. Al contrario, non è stato possibile risalire con certezza all'impiego di alcun protocollo in prodotti software o hardware commercializzati.
+
+Per quanto riguarda la vulnerabilità dei protocolli studiati nei confronti degli attacchi sopracitati, è risultato che nessuno di essi è completamente resistente ad tali attacchi. Infatti, nonostante sia stata dimostrato l'incondizionata sicurezza dei protocolli di QKD, questa rimane una proprietà teorica che cade o risulta indebolita in contesti reali quando ci si scontra coi limiti fisici dei canali di trasmissione \cite{lo_chau} \cite{scarani_renner}.
+
+Infine, per orientare la scelta di un protocollo di QKD rispetto ad altri, si è osservato come questa debba ricadere su protocolli che:
+\begin{itemize}
+    \item utilizzino un numero di basi di polarizzazione maggiore di due così da diminuire la probabilità che Eve indovini la corretta base per la misurazione dei qubit intercettati;
+    \item impieghino laser ad impulsi attenuati rispetto alle sorgenti a singoli fotoni per ottenere maggiori garanzie di sicurezza contro attacchi di tipo PNS (posto che si implementino meccanismi di difesa contro attacchi di tipo \textit{beam splitting});
+    \item basino la propria implementazione concreta su canali trasmissivi dalle prestazioni adeguate per limitare disturbi e perdite di contenuto informativo anche su lunghe distanze.
+\end{itemize}
+
+\section{Sviluppi futuri}
+Il campo della crittografia quantistica è in continua evoluzione e non comprende unicamente i protocolli di QKD, sebbene questi rappresentino una grossa porzione di questa disciplina. Il numero di tali protocolli è in costante aumento nel tentativo di proporne delle versioni maggiormente resistenti ad attacchi noti e resilienti alle inevitabili limitazioni dei mezzi trasmissivi. \\
+Future direzioni di ricerca possono riguardare l'esplorazione di ulteriori protocolli di QKD, specialmente quelli più recenti, al fine di osservarne similitudini e differenze e analizzare come questi affrontano le limitazioni di cui soffrono i loro predecessori. Un'ulteriore finalità di una futura ricerca sarebbe sicuramente indagare nuove implementazioni reali dei protocolli di QKD, rese possibili dai miglioramenti tecnologici avvenuti negli ultimi dieci anni.
